@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b1220;
+  --accent: #3b95ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-display: var(--font-space-grotesk), ui-sans-serif, sans-serif;
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, sans-serif;
+}
+
+/* Hide the scrollbar everywhere; scrolling still works (wheel, touch, keys). */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
